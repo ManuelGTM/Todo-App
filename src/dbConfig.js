@@ -1,11 +1,12 @@
 const { Pool } = require("pg");
+const { db } = require("./config");
 
 const pool = new Pool({
-  user: "mt",
-  password: "2206",
-  host: "localhost",
-  port: 5432,
-  database: "taskdo",
+  user: db.user,
+  password: db.password,
+  host: db.host,
+  port: db.port,
+  database: db.database,
 });
 
 pool.connect((err) => {
