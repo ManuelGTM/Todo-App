@@ -14,7 +14,7 @@ app.use(router);
 
 app.use((err, req, res, next) => {
   res.json({
-    message: "ERROR",
+    message: err.message,
   });
 });
 
