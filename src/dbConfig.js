@@ -11,7 +11,7 @@ const pool = new Pool({
 
 pool.connect((err) => {
   if (!err) {
-    console.log("Connection Successfully :)");
+    console.log("Connection Successfully :) :)");
   } else {
     console.log("Connection Failed :(");
   }
